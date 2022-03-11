@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Weather</title>
+</head>
+
+<body style="background-image: url(img/banner.png); background-size: cover; background-attachment: fixed;" >
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4 p-4">
+        <div class="container d-inline-block">
+            <div class="float-start">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="logo" class="w-25 me-1">
+                    <div class="d-inline-block align-middle">
+                        <h1>Weather</h1>
+                        <small class="d-block text-muted">tagline goes here</small>
+                    </div>
+                </a>
+            </div>
+            <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse float-end " id="navbarNav">
+                <ul class="navbar-nav justify-content-between">
+                    <li class="nav-item"><a class="nav-link active me-5 align-middle text-info" aria-current="page"
+                            href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white me-5 align-middle" href="#">News</a></li>
+                    <li class="nav-item"><a class="nav-link text-white me-5 align-middle" href="#">Live cameras</a></li>
+                    <li class="nav-item"><a class="nav-link text-white me-5 align-middle"
+                            href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- End Navbar -->
+
+    <section class="display-temp ">
+        <div class="hero">
+
+            <div class="container">
+                <form class="search m-auto d-flex p-1 mb-5" id="search">
+                    <input type="text" placeholder="Find your location..." class="w-100 " id="search-bar">
+                    <input type="button" value="Find" >
+                </form>
+            </div>
+
+            <div class="container city-temp d-flex">
+
+                <!-- Today's Card -->
+                <div class="temp-card shadow">
+                    <div class="day-and-date d-flex justify-content-between">
+                        <p id="today"></p>
+                        <p id="today-date"></p>
+                    </div>
+
+                    <div class="temp-datails">
+                        <p id="location"></p>
+                        <div class="d-flex justify-content-between my-4">
+                            <div class="pt-3">
+                                <h2 id="today-degree" class="d-inline-block"></h2>
+                                <h2 class="d-inline-block"><sup>o</sup>C</h2>
+                            </div>
+                            <img id="today-icon" width="90" />
+                        </div>
+                        <p id="today-description"></p>
+                        <div class="details">
+                            <img src="img/icon-umberella.png" alt="">                                     
+                            <span id="humidty"></span> <span>%</span>
+
+                            <img src="img/icon-wind.png" alt=""></img>
+                            <span id="wind"></span> <span>km/h</span>
+
+                            <img src="img/icon-compass.png" alt=""></img>
+                            <span id="compass"></span>
+
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Next Days Cards -->
+                <div class="temp-card text-center shadow">
+
+                    <div class="day-and-date">
+                        <p class="nextDay"></p>
+                    </div>
+
+
+                    <div class="temp-datails">
+                        <div>
+                            <img class="nextDay-icon" width="90" />
+                        </div>
+                        <h2 class="max-degree d-inline-block"></h2>
+                        <h2 class="d-inline-block"><sup>o</sup>C</h2>
+                        <br>
+                        <p class="min-degree d-inline-block"></p>
+                        <p class="d-inline-block"><sup>o</sup>C</p>
+                        <p class="nextDay-description"></p>
+                    </div>
+                </div>
+
+                <div class="temp-card text-center shadow">
+                    <div class="day-and-date">
+                        <p class="nextDay"></p>
+                    </div>
+
+                    <div class="temp-datails">
+                        <div>
+                            <img class="nextDay-icon" width="90" />
+                        </div>
+                        <h2 class="max-degree d-inline-block"></h2>
+                        <h2 class="d-inline-block"><sup>o</sup>C</h2>
+                        <br>
+                        <p class="min-degree d-inline-block"></p>
+                        <p class="d-inline-block"><sup>o</sup>C</p>
+                        <p class="nextDay-description"></p>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- End template -->
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-8">
+                    <form class="subscribe-form m-auto d-flex p-1 mb-5">
+                        <input type="text" placeholder="Enter your email to subscribe..." class="w-100 ">
+                        <input type="button" value="Subscribe" id="Subscribe">
+                    </form>
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                    <div class="social-links">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/weather.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

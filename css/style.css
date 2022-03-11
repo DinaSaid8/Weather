@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    color: #bfc1c8;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    font-style: normal;
+}
+
+/* Nav */
+nav h1{
+    font-size: 1.1428571429em;
+}
+nav small{
+    font-size: 0.7142857143em;
+}
+nav .nav-link :hover{
+    border-color: #0dcaf0 !important;
+    border-radius: 80% !important;
+}
+
+/* temp */
+.hero {
+    padding: 70px 0;
+}
+.display-temp .search  {
+    width: 95%;
+    background: #1e202b;
+}
+form input[type="text"] {
+    background: #1e202b;
+    color: white;
+}
+form input[type="button"] {
+    background: #009ad8;
+}
+.display-temp #search{
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+form input, form textarea, form select {
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 75px;
+}
+.display-temp .temp-card {
+    width: 32%;
+    border-radius: 8px;
+    background: #262936;
+    height: 350px;
+
+}
+.display-temp .temp-card:first-of-type h2 {
+    font-size: 50px;
+    font-weight: 600;
+}
+.display-temp .temp-card:nth-of-type(2) {
+    margin-left: 1%;
+    margin-right: 1%;
+
+}
+.display-temp .temp-card .day-and-date {
+    background-color: #455a64;
+    color: #bfc1c8;
+    padding: 10px 25px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.display-temp .temp-card .day-and-date p {
+    margin: 0 !important;
+}
+.display-temp .temp-card #location {
+    font-size: 22px;
+    text-shadow: 0 0 1px #fff,  0 0 1px #fff
+}
+.display-temp .temp-card .temp-datails {
+    padding: 25px;
+    color: #fff;
+}
+.display-temp .temp-card .temp-datails #today-description,
+.display-temp .temp-card .temp-datails .nextDay-description {
+    font-size: 14px;
+    color: #455a64;
+    text-shadow: 0 0 1px #455a64,  0 0 1px #455a64;
+}
+/* Small to Medium Screen */
+@media (max-width: 991px) 
+{
+
+    /* Display Temp */
+    .display-temp .city-temp {display: block !important;}
+
+    .display-temp #search-bar {margin-bottom: 10px !important;}
+
+    .display-temp .search,
+    .display-temp .temp-card {
+        width: 100%;
+        margin: 20px 0 !important;
+    }
+
+}
+
+/* footer */
+.site-footer {
+    background: #262936;
+    padding: 50px 0;
+}
+.site-footer .subscribe-form {
+    position: relative;
+    margin-bottom: 30px;
+    background: #1e202b;
+    border-radius: 75px;
+    height: 50px;
+
+}
+.site-footer .subscribe-form input[type="text"] {
+    padding: 20px 100px 20px 20px;
+    background: #1e202b;
+    width: 100%;
+    color: white;
+}
+.site-footer .subscribe-form input[type="submit"]{
+    background: #009ad8;
+}
+.site-footer .social-links a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #1e202b;
+    color: #009ad8;
+    text-align: center;
+    line-height: 2;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    font-size: 20px;
+  }
+  .site-footer .social-links a:hover {
+    background: #009ad8;
+    color: white;
+  }
+  
+
