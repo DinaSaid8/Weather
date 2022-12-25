@@ -23,7 +23,7 @@ monthName = ['Jan','Feb','March','April','May','June','July','Aug','Spet','Oct',
 
   // get data from Api
 async function getWeatherData(currentCity='cairo'){
-  apiResponse = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=cbeef6e5429845fa8a8153816220402&q=${currentCity}&days=3`)
+  apiResponse = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=cbeef6e5429845fa8a8153816220402&q=${currentCity}&days=3`)
    responseData= await apiResponse.json()
   console.log(responseData)
   getTodayWeather();
